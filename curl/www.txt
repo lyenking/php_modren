@@ -1,0 +1,369 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-cn">
+<head>
+	<meta name="baidu-site-verification" content="LAeUvJjWxm"/>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+	 <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1"> 
+	<title>企服网-首页-企业信息化管理专家</title>
+	<meta name="keywords" content="ERP软件,ERP软件服务,企业管理咨询服务,天津ERP软件,ERP上门服务," />
+	<meta name="description" content="企服网汇聚了国内最优秀的企业管理软件服务工程师，为企业提供最及时、最体贴、最优质的企业ERP服务、管理咨询服务。" />
+	<script type="text/javascript" src="/website/Public/js/jquery.min.js"></script>
+	<script src="/website/Public/js/extends.js"></script>
+	<script src="/website/Public/js/layer/layer.js"></script>
+	<link href="/website/Public/css/mycenter.css" rel="stylesheet" type="text/css" />
+	<link rel="Shortcut Icon" href="/website/Public/css/favicon.ico">
+	<style type="text/css">
+	 
+	</style>
+</head>
+<body>
+<div id="content" style="width:100%;height:100%;border:0px solid red;margin:0 auto;padding:0px;">
+	<div class="header" style="z-index:3;">
+		<div class="h_one">
+			<p style="margin-right:120px;">
+                <a href="/">
+                    <img class="logo_img" src="/website/Public/img/logo.png" />
+                </a>
+            </p>
+		</div>
+		<div class="h_two">
+                            <a href="/Index/reg.html">
+                    <div class="mune_list_register"  id="btn_register">
+                        免费注册
+                        <div class="f1" id="register1"></div> 
+                    </div>
+                </a>
+                <a href="/Index/login.html">
+                    <div class="mune_list_login" id="btn_login">
+                        登录
+                        <div class="f2" id="login1"></div> 
+                    </div>
+                </a>
+            			<a href="/Center/index.html"><div class="mune_list" style="">服务平台</div></a>
+			<a href="/Article/index/cate/news.html"><div class="mune_list" style="">资讯</div></a>
+			<a href="/Article/index/cate/example.html"><div class="mune_list" style="">案例</div></a>
+			<a href="/"><div class="mune_list" style="">首页</div></a>
+		</div>
+	</div>
+	<div style="width:100%;height:100px;"></div>
+    <div id="" class="index_content">
+<div id="main" class="main" >
+<script src="/website/Public/js/index.js"></script>
+<link href="/website/Public/css/index.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript">
+    window.onscroll = function () {
+        var t = document.documentElement.scrollTop || document.body.scrollTop;
+        function ai(a) {
+            return document.getElementById(a);
+        }
+        //var top_div = document.getElementById( "top_div" );
+        if (t >= 900 && t <= 1200) {
+            //top_div.style.display = "inline";
+            ai("three_title").style.opacity = "1";
+            ai("three_title").style.transition = "opacity 1s";
+
+            ai("three_a1").style.opacity = "1";
+            ai("three_a1").style.transition = "opacity 2s";
+
+            ai("three_a2").style.opacity = "1";
+            ai("three_a2").style.transition = "opacity 3s";
+
+            ai("three_a3").style.opacity = "1";
+            ai("three_a3").style.transition = "opacity 4s";
+
+            ai("three_a4").style.opacity = "1";
+            ai("three_a4").style.transition = "opacity 3s";
+
+            ai("three_a5").style.opacity = "1";
+            ai("three_a5").style.transition = "opacity 2s";
+
+            ai("three_a6").style.opacity = "1";
+            ai("three_a6").style.transition = "opacity 1s";
+        } else {
+            //top_div.style.display = "none";
+        }
+    }
+</script>
+
+
+<div id="" class="index_first">
+    <div class="frist_text">企服网--企业信息化管理专家</div>
+    <div class="index_img_butt btn_link_reg" id="jion" onmouseover="jion()" onmouseout="jionout()">
+        <div class="img_butt_1" id="jion2" ></div>
+        加入企服网
+    </div>
+</div>
+<div id="" class="index_two">
+    <div class="two_box">
+        <div class="index_mid_1 mid_1" style="">
+            <div class="mid_b"><img id="rotate" class="mid_img" src="/website/Public/img/1112.gif" /></div>
+            <div class="mid_a mid_a_1">快速响应</div>
+            <div class="mid_a mid_a_2" onmouseover="this.style.background = '#009EE3'" onmouseout="this.style.background = '#fff'">
+                <div id="" class="mid_a_a" style="text-align:left">
+                    企服网在您提交订单之后，第一时间结合您提出的要求，
+					迅速派出最合适的工程师，以最高效的服务回馈您对我们长期的信任与支持！
+                </div>
+            </div>
+        </div>
+        <div class="index_mid_1">
+            <div class="mid_b"><img id="rotate1" class="mid_img" src="/website/Public/img/4444.jpg" /></div>
+            <div class="mid_a mid_a_1">优质服务</div>
+            <div class="mid_a mid_a_2" onmouseover="this.style.background = '#009EE3'" onmouseout="this.style.background = '#fff'">
+                <div id="" class="mid_a_a" style="text-align:left">
+				   通过企服网，结合我们众多经验丰富且技艺精湛的工程师，
+				   来帮助您解决企业管理软件出现的所有问题，为您提供最优质的服务！
+			    </div>
+            </div>
+        </div>
+        <div class="index_mid_1" style="">
+            <div class="mid_b"><img id="rotate2" class="mid_img" src="/website/Public/img/148.png" /></div>
+            <div class="mid_a mid_a_1">用户好评</div>
+            <div class="mid_a mid_a_2" onmouseover="this.style.background = '#009EE3'" onmouseout="this.style.background = '#fff'">
+				<div id="" class="mid_a_a" style="text-align:left">
+					您可以通过透明化评价系统实现对工程师服务质量的监督与跟进，
+					更有效的保障自己的权益，提升满意度!
+				</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="index_three">
+    <div id="" class="three_box">
+        <h2 id="three_title" style="color:#fff;opacity: 0;">他们正在使用企服网</h2><hr width="180px" color="#e3e3e3"/>
+        <div id="three_a1" style="opacity: 0;" class="three_a" onmouseover="guodu()" onmouseout="guoduout()">
+            <div class="three_a_1" style="background:">
+                <!-- <div id="xuangzhuang" class="xuanz"><img id="noxuan" class="imgxuan" src="/website/Public/img/geli.jpg"/></div> -->
+				<div id="xuangzhuang"><img id="noxuan" style="width:90%;height:90px;" src="/website/Public/img/geli.jpg"/></div>
+            </div>
+            <div id="three_a_2">
+                <div id="tdown" class="tdown_a" style="">
+                    <div style="width:88%;margin:0 auto;font-size:14px;color:#fff;line-height:20px">
+						<p><b style="font-size:20px;color:#000">格力电器</b></p>
+					   珠海格力电器股份有限公司是集研发、生产、销售、服务于一体的国有控股家电企业，
+					   其产品包括家用空调、中央空调、空气能热水器、TOSOT生活电器、晶弘冰箱等。
+				   </div>
+                </div>
+            </div>
+        </div>
+        <div id="three_a2" style="opacity: 0;" class="three_a" onmouseover="guodu1()" onmouseout="guoduout1()">
+            <div class="three_a_1" style="">
+                <!-- <div id="xuangzhuang1" class="xuanz"><img id="noxuan1" class="imgxuan" src="/website/Public/img/jinbinlianhewuye.jpg"/></div> -->
+				<div id="xuangzhuang1"><img id="noxuan" style="width:90%;height:90px;" src="/website/Public/img/jinbin.jpg"/></div>
+            </div>
+            <div id="three_a_2">
+                <div id="tdown1" class="tdown_a">
+					 <div style="width:88%;margin:0 auto;font-size:14px;color:#fff;line-height:20px">
+						<p><b style="font-size:20px;color:#000">津滨联合物业</b></p>
+						天津津滨联合物业服务有限公司是津滨发展旗下由多家股东出资、提供高端物业服务以及物业顾问咨询的专业化企业，业务范围涉及物业服务、物业顾问咨询、会所管理、环境清洁咨询等领域
+					</div>
+                </div>
+            </div>
+        </div>
+        <div id="three_a3" style="opacity: 0;" class="three_a" onmouseover="guodu2()" onmouseout="guoduout2()">
+            <div class="three_a_1" style="">
+                <!-- <div id="xuangzhuang2" class="xuanz"><img id="noxuan2" class="imgxuan" src="/website/Public/img/tianhaoshangmou.jpg"/></div> -->
+				<div id="xuangzhuang2"><img id="noxuan" style="width:90%;height:90px;" src="/website/Public/img/tianhao.jpg"/></div>
+            </div>
+            <div id="three_a_2">
+                <div id="tdown2" class="tdown_a">
+					<div style="width:88%;margin:0 auto;font-size:14px;color:#fff;line-height:20px">
+						<p><b style="font-size:20px;color:#000">天浩实业</b></p>
+					   天津开发区滨海天浩实业有限公司成立于2008年的主要经营的产品有：办公用品、电脑耗材、劳保用品、五金机电、办公家具等。
+					</div>
+                </div>
+            </div>
+        </div>
+        <div id="three_a4" style="opacity: 0;" class="three_a" onmouseover="guodu3()" onmouseout="guoduout3()">
+            <div class="three_a_1" style="">
+                <!-- <div id="xuangzhuang3" class="xuanz"><img id="noxuan3" class="imgxuan" src="/website/Public/img/yilan.jpg"/></div> -->
+				<div id="xuangzhuang3"><img id="noxuan" style="width:90%;height:90px;" src="/website/Public/img/yilan.jpg"/></div>
+            </div>
+            <div id="three_a_2">
+                <div id="tdown3" class="tdown_a">
+					<div style="width:88%;margin:0 auto;font-size:14px;color:#fff;line-height:20px">
+						<p><b style="font-size:20px;color:#000">天津依兰国际酒店</b></p>
+						天津依兰国际商务酒店是按照4星级标准设计建造的集客房、餐饮、娱乐、商务会议为一体的现代化商务休闲酒店。
+					</div>
+                </div>
+            </div>
+        </div>
+        <div id="three_a5" style="opacity: 0;" class="three_a" onmouseover="guodu4()" onmouseout="guoduout4()">
+            <div class="three_a_1" style="">
+                <!-- <div id="xuangzhuang4" class="xuanz"><img id="noxuan4" class="imgxuan" src="/website/Public/img/yixiang.jpg"/></div> -->
+				<div id="xuangzhuang4"><img id="noxuan" style="width:90%;height:90px;" src="/website/Public/img/yixiang.png"/></div>
+            </div>
+            <div id="three_a_2">
+                <div id="tdown4" class="tdown_a">
+					<div style="width:88%;margin:0 auto;font-size:14px;color:#fff;line-height:20px">
+						<p><b style="font-size:20px;color:#000">怡乡春竹</b></p>
+						怡乡春竹集团创立于2005年9月，是一家以经营健康养生餐饮为主的大型健康餐饮管理集团。倡导健康的用餐方式，践行健康的饮食理念，主推以新鲜海鲜为主要食材的养生火锅，是中华第九菜系的倡导者！
+					</div>
+                </div>
+            </div>
+        </div>
+        <div id="three_a6" style="opacity: 0;" class="three_a" onmouseover="guodu5()" onmouseout="guoduout5()">
+            <div class="three_a_1" style="">
+                <!-- <div id="xuangzhuang5" class="xuanz"><img id="noxuan5" class="imgxuan" src="/website/Public/img/beifangzhonglian.jpg"/></div> -->
+				<div id="xuangzhuang5"><img id="noxuan" style="width:90%;height:90px;" src="/website/Public/img/beifang.jpg"/></div>
+            </div>
+            <div id="three_a_2">
+                <div id="tdown5" class="tdown_a">
+					<div style="width:88%;margin:0 auto;font-size:14px;color:#fff;line-height:20px">
+						<p><b style="font-size:20px;color:#000">北方中联</b></p>
+						北方中联（天津）电子科技有限公司于2014年8月15日在天津工商局登记注册，公司注册资本500（万元）位于天津经济技术开发区，主要经营计算机软硬件开发、转让、服务、咨询等。
+					</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="" class="index_four">
+    <div id="" class="">
+        <iframe frameborder=0 border=0 width="100%" height="450px" scrolling="no" src="/website/Public/tu/index5.html"></iframe>
+    </div>
+</div>
+<div id="" class="index_five">
+    <div id="" class="five_1">
+        数百家企业正在使用企服网<hr width="200px" />
+    </div>
+    <div class="five_3" style="">我们每天都为数以百计的客户提供软硬件在内的企业服务</dvi>
+        <div class="five_2 btn_link_reg" id="lo" onmouseover="zhuce()" onmouseout="zhuceout()" onclick="window.location.href = 'http://www.baidu.com'">
+            立即注册，马上使用
+            <div class="five_2_a" id="lo2"></div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+(function(){
+	var element = document.getElementById("rotate");
+	var r = 0;
+	var i = 1;
+	function rotate(){
+		r += i;
+		if( Math.abs(r) >= 360 ) i*=1
+		element.style.MozTransform = "rotate(" + r + "deg)";
+		element.style.webkitTransform ="rotate(" + r + "deg)";
+		element.style.msTransform = "rotate(" + r + "deg)";
+		element.style.OTransform = "rotate(" + r + "deg)";
+		element.style.transform = "rotate(" + r + "deg)";
+	}
+
+	var timer = setInterval(rotate,10);
+
+	element.onmouseover = function(){
+		clearInterval(timer);
+		timer = null;
+	};
+
+	element.onmouseout = function(){
+		if(timer)return;
+		timer = setInterval(rotate,10);
+	};
+}());
+
+(function(){
+	var element = document.getElementById("rotate1");
+	var r = 0;
+	var i = 1;
+	function rotate(){
+		r += i;
+		if( Math.abs(r) >= 360 ) i*=1
+		element.style.MozTransform = "rotate(" + r + "deg)";
+		element.style.webkitTransform ="rotate(" + r + "deg)";
+		element.style.msTransform = "rotate(" + r + "deg)";
+		element.style.OTransform = "rotate(" + r + "deg)";
+		element.style.transform = "rotate(" + r + "deg)";
+	}
+
+	var timer = setInterval(rotate,10);
+
+	element.onmouseover = function(){
+		clearInterval(timer);
+		timer = null;
+	};
+
+	element.onmouseout = function(){
+		if(timer)return;
+		timer = setInterval(rotate,10);
+	};
+}());
+
+
+(function(){
+	var element = document.getElementById("rotate2");
+	var r = 0;
+	var i = 1;
+	function rotate(){
+		r += i;
+		if( Math.abs(r) >= 360 ) i*=1
+		element.style.MozTransform = "rotate(" + r + "deg)";
+		element.style.webkitTransform ="rotate(" + r + "deg)";
+		element.style.msTransform = "rotate(" + r + "deg)";
+		element.style.OTransform = "rotate(" + r + "deg)";
+		element.style.transform = "rotate(" + r + "deg)";
+	}
+
+	var timer = setInterval(rotate,8);
+
+	element.onmouseover = function(){
+		clearInterval(timer);
+		timer = null;
+	};
+
+	element.onmouseout = function(){
+		if(timer)return;
+		timer = setInterval(rotate,8);
+	};
+}());
+</script>
+
+</div>
+
+    <div class="my_footer">
+        <div id="" class="firend_link">
+            <div class="fir_info_1"><a href="/Introduct/index/show_type/3.html">常见问题|</div>
+            <div class="fir_info"><a href="/Introduct/index/show_type/2.html">服务流程|</a></div>
+            <div class="fir_info"><a href="/Introduct/index/show_type/1.html">网站说明|</a></div>
+            <div class="fir_info"><a href="/Introduct/index/show_type/4.html">友情链接</a></div>
+        </div>
+        <div id="" class="copy_link">
+            Copyright © 2014-2015 企服网&nbsp;&nbsp;<a href="">www.qifuwang.net</a>
+        </div>
+        <div id="" class="adrees_link">
+            地址：天津市开发区第六大街泰达服务外包产业园8号楼二层
+        </div>
+        <div id="" class="tell_link">
+            客服电话：18622304502  <a href="">津ICP备15004236号-1</a>
+        </div>
+    </div>
+</div>
+<script>
+//底部需要的公用JS
+$(function(){
+    //链接跳转
+    $('.btn_link_reg').click(function(){
+        window.location.href = '/Index/reg.html';
+    });
+    //链接跳转
+    $('.btn_link_login').click(function(){
+        window.location.href = '/Index/login.html';
+    });
+    //鼠标经过
+    $('#btn_register').mouseover(function(){
+        colorCh('register1');
+    }).mouseout(function(){
+        colorRe('register1');
+    });
+    //鼠标经过
+    $('#btn_login ').mouseover(function(){
+        colorCh1('login1');
+    }).mouseout(function(){
+        colorRe1('login1');
+    });
+});
+</script>
+</body>
+</html>
