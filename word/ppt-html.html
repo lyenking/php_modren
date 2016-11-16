@@ -1,0 +1,28 @@
+<?php
+	$ppApp = new COM("PowerPoint.Application");
+	$ppApp->Visible = True;
+
+	$strPath = realpath(basename(getenv($_SERVER["SCRIPT_NAME"]))); // C:/AppServ/www/myphp
+
+	$ppName = "MySlides.ppt";
+	$FileName = "MyPP/MyPPt";
+	
+	//*** Open Document ***//
+	$ppApp->Presentations->Open(realpath($ppName));
+
+	//*** Save Document ***//
+	$ppApp->ActivePresentation->SaveAs($strPath."/".$FileName,14);
+	//$ppApp->ActivePresentation->SaveAs(realpath($FileName),14);
+
+	$ppApp->Quit;
+	$ppApp = null;
+?>
+<html>
+<head>
+<title>ThaiCreate.Com PHP & PowerPoint.Application</title>
+</head>
+<body>
+
+PowerPoint Created <a href="<?php echo $FileName?>.htm">Click here</a> to View.
+</body>
+</html>
