@@ -1,0 +1,58 @@
+<html>
+	<head>
+		<title> test mouse over move </title>
+		<script>
+			document.addEventListener("mousemove", function(e) {
+			  var movementX = e.movementX       ||
+			                  e.mozMovementX    ||
+			                  e.webkitMovementX ||
+			                  0,
+			      movementY = e.movementY       ||
+			                  e.mozMovementY    ||
+			                  e.webkitMovementY ||
+			                  0;
+
+			  // Print the mouse movement delta values
+			  //console.log("movementX=" + movementX, "movementY=" + movementY);
+			  //console.log("movementX=" + movementX);
+			  //var mx = $("divc").style.width = movementX+"%";
+			  //$("divc").style.height = "123px";
+			  $("dimg").style.transform = "rotate("+movementX * 5+"deg)";
+			  if(movementX > 900){
+			  	alert("ok")
+			  }
+			}, false);
+			
+			function $(divc){
+				return document.getElementById(divc);
+			}
+		</script>
+		<style>
+			.ty{
+				width: 123px;height: 100px;background: gray;
+				margin: auto;
+			}
+			.tyy:hover{
+				/*transform:scale(2.2);transform:skew(-10deg);*/
+				transform:rotate(-15deg);
+				
+			}
+		</style>
+	</head>
+	<body>
+		<div style="width: 900px;height: 400px;margin: auto;border: 1px solid gray;">
+			<div id="divc" style="background: pink;margin: auto;width:123px;height: 50px;"></div>
+			<div><img id="dimg" src="23300586_192658063000_2.jpg" style="width: 220px" /></div>
+			<div class="ty"></div>
+		</div>
+		
+		<script>
+			var onMouseMove = function(event){
+				var movementX = event.movementX || event.mozMovementX || event.webkitMovementX || 0;
+				var movementY = event.movementY || event.mozMovementX || event.webkitMovementX || 0;
+				console.log(movementX);
+				alert(movementX);
+			}
+		</script>
+	</body>
+</html>
