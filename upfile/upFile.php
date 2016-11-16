@@ -26,8 +26,7 @@ function word2html($wordname,$htmlname)
  unset($word);
 }
 $time = time();
-//$htmlname = $_SERVER['DOCUMENT_ROOT'].'/upload_html/'.$time.'.html';
-//word2html('E:/xampp/htdocs/webobj/php_modern/upfile/test-for -the-2003.docx','E:/xampp/htdocs/webobj/php_modern/upfile/78.html');
+word2html('http://jvtest.goodfuture.cc/test.doc','http://jvtest.goodfuture.cc/1.html');
 //exit;
 //$ae=file_get_contents('http://cjy.webobj.net/php_modern/upfile/6.html');
 //var_dump($ae);exit;
@@ -58,7 +57,7 @@ function http_get($url, $ssl = FALSE)
 	return $tmpInfo; // 返回数据
 }
 
-$url = "http://cjy.webobj.net/php_modern/upfile/78.html";
+$url = "http://jvtest.goodfuture.cc/1.html";
 //http://cjy.www.net/website/Public/img/geli.jpg
 $html = http_get($url);
 //<o:Pages>3</o:Pages>
