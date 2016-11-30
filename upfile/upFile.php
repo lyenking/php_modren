@@ -12,9 +12,12 @@ if(move_uploaded_file($file['tmp_name'],$upload_path.$file['name'])){
 	echo "failed !";
 }
 */
-
 //echo "<pre>";var_dump($_SERVER);exit;
-
+//$file_url =  "http://www.u-club.cn/test.doc";
+//$content = file_get_contents($file_url);
+$fn = "./2.doc";
+//file_put_contents($fn, $content);
+//exit;
 function word2html($wordname,$htmlname)
 {
  $word = new COM("word.application") or die("Unable to instanciate Word");
@@ -25,9 +28,16 @@ function word2html($wordname,$htmlname)
  $word = null;
  unset($word);
 }
-$time = time();
-word2html('http://jvtest.goodfuture.cc/test.doc','http://jvtest.goodfuture.cc/1.html');
-//exit;
+//$time = time();
+$fhml = "./2.html";
+word2html($fn,$fhml);
+/*
+if($a){
+	echo "oko";
+}else{
+	echo "nook";
+}
+exit;*/
 //$ae=file_get_contents('http://cjy.webobj.net/php_modern/upfile/6.html');
 //var_dump($ae);exit;
 
@@ -57,13 +67,15 @@ function http_get($url, $ssl = FALSE)
 	return $tmpInfo; // 返回数据
 }
 
-$url = "http://jvtest.goodfuture.cc/1.html";
+//$url = "http://jvtest.goodfuture.cc/1.html";
 //http://cjy.www.net/website/Public/img/geli.jpg
-$html = http_get($url);
+$html = http_get($fhml);
 //<o:Pages>3</o:Pages>
 $re = '/\<o\:Pages\>.+\<\/o\:Pages\>/Us';
 preg_match_all($re, $html, $res);
-var_dump($res);exit;
+echo $res[0][0];
+exit;
+//var_dump($res);exit;
 if(file_exists("78.files")){
 	echo "ok";
 	//rmdir("78.files");
