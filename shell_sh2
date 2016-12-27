@@ -1,0 +1,16 @@
+1. 生成私钥
+
+openssl genrsa -out server.key 2048
+2. 生成 CSR 证书请求文件
+命令格式：
+
+openssl req -utf8 -out server.csr -key server.key -new -sha256
+从【Email Address】开始，下面的信息都不需要，请保留为空，直接回车即可。
+
+
+注：
+
+    Common Name 项请输入您要申请域名证书的完整域名，而不是您的真实名称与姓氏，
+    例如：如果需要为 www.sslzhengshu.com 申请域名证书就必须输入www.sslzhengshu.com 而不能输入 sslzhengshu.com。
+    如果申请通配域名证书，则输入通配域名的形式，通配符为“*.sslzhengshu.com"
+    如果申请多域名证书，则输入多域名中第一个域名即可。
