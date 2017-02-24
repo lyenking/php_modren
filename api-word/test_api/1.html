@@ -1,0 +1,33 @@
+<html>
+	<head>
+		<meta charset="utf-8" />
+	</head>
+	<script src="http://apps.bdimg.com/libs/jquery/1.6.4/jquery.min.js"></script>
+	<body>
+	<form id="myfile" action="http://print-identification.oss-cn-hangzhou.aliyuncs.com/" method="post" enctype="multipart/form-data" name="myfile">
+		<input type="file" name="myfile" />
+		<input type="submit" value="tjiao"/>
+	</form>
+
+	<div id="FormData">FormData</div>
+	<div id="test">测试</div>
+	<div id="resText"></div>
+	<div id="msg">hsfjskfj</div>
+	<iframe name="iframeName1" src="http://cjy.webobj.net/php_modern/api-word/2.html" id="iframeID1" width="120" height="120"frameborder="1" >
+		<div id="childv">123</div>
+		<script>
+		
+			window.onload= function(){
+				//window.parent.postMessage('red','*');
+				alert(document.getElementById("downloadfileurl").innerHTML);
+			}
+			/*window.addEventListener('message',function(e){
+                if(e.source!=window.parent) return;
+                container.style.backgroundColor = "red";
+                var color=container.style.backgroundColor;
+                window.parent.postMessage(color,'*');
+            },false);*/
+		</script>
+	</iframe>
+	</body>
+</html

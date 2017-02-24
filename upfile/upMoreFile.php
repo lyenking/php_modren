@@ -1,6 +1,7 @@
 <?php
 // 获得文件数据
 $file = $_FILES['file'];
+//echo "<pre>";var_dump($file);exit;
 if(count($file['name']) > 11){
 	echo "不能同时上传超过10张图片";
 	exit;

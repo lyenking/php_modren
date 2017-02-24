@@ -1,0 +1,123 @@
+<html>
+	<head>
+		<meta charset="utf-8" />
+	</head>
+	<script src="http://apps.bdimg.com/libs/jquery/1.6.4/jquery.min.js"></script>
+	<body>
+	
+	<form style="display: none" method="POST" action="http://cn.office-converter.com/OnlinePHP/upload.php" enctype="multipart/form-data">
+		<input id="ajax-upload-id-1481092888478" name="myfile[]" type="file" />
+		<input type="submit" value="tjiao"/>
+	</form>
+	<hr />
+	<form style="display: none" id= "uploadForm">  
+          <p >指定文件名： <input type="text" name="filename" value= ""/></p >  
+          <p >上传文件： <input type="file" name="myfile[]"/></ p>  
+          <input type="button" value="上传" onclick="doUpload()" />  
+    </form>  
+	
+	<hr />
+	<form id="myfile" action="http://cn.office-converter.com/files-url-process.php" method="post" enctype="multipart/form-data" name="myfile">
+		<input type="file" name="myfile" />
+		<input name="filesurl" value="http://www.u-club.cn/test.doc" />
+		<input name="filessession" value="165566" />
+		<input type="submit" value="tjiao" onclick="doUpload()"/>
+	</form>
+	
+	<hr/>
+	
+	<form id="myfile2">
+		<input type="file" name="myfile" />
+		<input name="filesurl" value="http://www.u-club.cn/test.doc" />
+		<input name="filessession" value="23185" />
+		<input type="button" value="tjiao2" onclick="doUpload()"/>
+	</form>
+	<!--<div name="iframeName1"></div>-->
+	<div id="test">测试</div>
+	<div id="resText"></div>
+	<div id="msg">hsfjskfj</div>
+	<!--<iframe name="iframeName1" src="http://cjy.webobj.net/php_modern/api-word/2.html" id="iframeID1" width="120" height="120"frameborder="1" >
+		<div id="childv">123</div>
+		<script>
+		
+			window.onload= function(){
+				//window.parent.postMessage('red','*');
+				alert(document.getElementById("downloadfileurl").innerHTML);
+			}
+			/*window.addEventListener('message',function(e){
+                if(e.source!=window.parent) return;
+                container.style.backgroundColor = "red";
+                var color=container.style.backgroundColor;
+                window.parent.postMessage(color,'*');
+            },false);*/
+		</script>
+	</iframe>-->
+	
+	<script>
+		window.onload= function(){
+			window.addEventListener('message',function(e){
+		            var color=e.data;
+		            console.log(color);
+		            //document.getElementById('color').style.backgroundColor=color;
+		        },false);
+		}
+	</script>
+	
+	<script>
+		function doUpload() { 
+				alert("okoko") 
+			     var formData = new FormData($( "#myfile2" )[0]);  
+			     alert(formData)
+			     $.ajax({  
+			          url: 'http://cn.office-converter.com/files-url-process.php' ,  
+			          dataType:'jsonp',
+			          type: 'POST', 
+			          //dataType: "jsonp" 
+			          data: formData,  
+			          async: false,  
+			          cache: false,  
+			          contentType: false,  
+			          processData: false,  
+			          success: function (returndata) {
+			          		alert('okok')  
+			              console.log(returndata);  
+			          },  
+			          error: function (returndata) {  
+			              console.log(returndata);  
+			          }  
+			     });  
+			}
+		$(function(){
+			document.domain = "webobj.net";
+			$("#FormData").click(function(){
+				$.ajax({ 
+					url: 'http://cn.office-converter.com/files-url-process.php', 
+					type: 'POST', 
+					cache: false, 
+					data: new FormData($('#myfile')[0]), 
+					processData: false, 
+					contentType: false 
+				}).done(function(res) { 
+					console.log(res);
+				}).fail(function(res) {
+					console.log(res);
+				});
+			});
+
+			$('#msg').click(function(){
+				alert($('body').html())
+				window.frames[0].postMessage('getcolor','http://cjy.webobj.net');
+				window.addEventListener('message',function(e){
+		            var color=e.data;
+		            console.log(color);
+		            //document.getElementById('color').style.backgroundColor=color;
+		        },false);
+			});
+			
+			
+			
+			
+		});
+	</script>
+	</body>
+</html

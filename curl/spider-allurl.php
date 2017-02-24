@@ -71,18 +71,17 @@ set_time_limit(0); //一个php脚本只能执行30秒
 	}
 	
 	
-//$url = "http://www.anjielaw.com/";
-$url = "http://demo.themexlab.com/law/law_curved/";
+$url = "http://htmldemo.themessoft.com/organ/version1/";
 //http://cjy.www.net/website/Public/img/geli.jpg
 $html = httpCurl($url);
 //$re = '/\<img(.+)src=("|\')(.+)\\1.*>/Us';
 //$re = '/\<img.*src=("|\')(.+)\\1.*>/Us';
 //$re = '/\<em style="background-image: url\((.+)\);"\>\<\/em\>/Us';
 //$re = '/\<i\>\<img src="(.+)" alt="" \/\>\<\/i\>/Us';
-$re = '/\<img src="(.+)"(.+)\/\>/Us';
+$re = '/<\img src="(.+)" alt="(.*)"\>/';
 preg_match_all($re, $html, $res);
 echo "<pre>";var_dump($res);
-exit;
+//exit;
 foreach($res[1] as $k => $v){
 	//echo "<br/>".strrchr($v,'/'); 字符串最后出现的位置开始取
 	$imgName = ltrim(strrchr($v,'/'),'/');// 去除 /
