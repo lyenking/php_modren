@@ -1,0 +1,88 @@
+Zend Framework连接和使用多个数据库实例：
+在Zend框架中，我们可以通过Zend_Application_Resource_Multidb来实现多个数据库的连接与操作，具体操作如下：
+
+１.修改配置文件application/configs/application.ini，定义数据库的连接：
+
+;公共的主数据库
+
+resources.multidb.comm.adapter = "pdo_mysql"
+
+resources.multidb.comm.host = "10.0.1.250"
+
+resources.multidb.comm.username = "root"
+
+resources.multidb.comm.password = "520215"
+
+resources.multidb.comm.dbname = "swsgamesql-1"
+
+resources.multidb.comm.default = true
+
+ 
+
+;摇钱树 machine
+
+resources.multidb.machine.adapter = "pdo_mysql"
+
+resources.multidb.machine.host = "10.0.1.241"
+
+resources.multidb.machine.username = "root"
+
+resources.multidb.machine.password = "root"
+
+resources.multidb.machine.dbname = "machine"
+
+ 
+
+;时空战警 spaceman
+
+resources.multidb.spaceman.adapter = "pdo_mysql"
+
+resources.multidb.spaceman.host = "10.0.1.168"
+
+resources.multidb.spaceman.username = "root"
+
+resources.multidb.spaceman.password = "admin"
+
+resources.multidb.spaceman.dbname = "spaceman"
+
+２.在Bootstrap.php文件中添加方法（会自动加载），进行连接设置和存储
+
+protected function _initDb(){
+
+$resource = $this->getPluginResource('multidb');
+
+$resource->init();
+
+ 
+
+$db_common = $resource->getDb('comm');
+
+$db_machine = $resource->getDb('machine');
+
+$db_spaceman = $resource->getDb('spaceman');
+
+ 
+
+Zend_Registry::set('db_common', $db_common);
+
+Zend_Registry::set('db_machine', $db_machine);
+
+Zend_Registry::set('db_spaceman', $db_spaceman);
+
+//是否还需要设置一下默认的db配置器？Zend_Db_Table_Abstract::setDefaultAdapter($db);，以后做实验跟踪一下。
+
+}
+
+３.在控制器或其它地方使用
+
+$db_comm = Zend_Register::get('db_common');
+
+$rs_comm = $db_comm->fetchAll("select * from table_name");
+
+ 
+
+$db_machine = Zend_Register::get('db_machine');
+
+$rs_machine = $db_machine->fetchAll("select * from machine");
+
+....
